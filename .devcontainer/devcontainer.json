@@ -1,0 +1,4 @@
+{
+  "image": "ai-container-test",
+  "postCreateCommand": "setup-env.sh && install-mcps.sh || true"
+}
