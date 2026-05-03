@@ -1,0 +1,37 @@
+{
+  "id": "ai-agentic-tools",
+  "version": "1.0.0",
+  "name": "AI Agentic Tools",
+  "description": "A comprehensive dev container for AI-assisted coding with multiple AI assistants (Claude Code, OpenCode, Copilot, Crush, Gemini, Codex) and Model Context Protocol (MCP) server support.",
+  "documentationURL": "https://github.com/calvinw/ai-agentic-tools-template",
+  "publisher": "Calvin Williamson",
+  "licenseURL": "https://github.com/calvinw/ai-agentic-tools/blob/main/LICENSE",
+  "keywords": [
+    "ai",
+    "coding",
+    "claude",
+    "copilot",
+    "opencode",
+    "agentic",
+    "mcp",
+    "skills",
+    "node"
+  ],
+  "platforms": [
+    "JavaScript",
+    "TypeScript",
+    "Python"
+  ],
+  "options": {
+    "installDataScience": {
+      "type": "boolean",
+      "description": "Install data science tools (Jupyter, pandas, numpy, matplotlib)",
+      "default": false
+    },
+    "installDolt": {
+      "type": "boolean",
+      "description": "Install Dolt (version-controlled SQL database)",
+      "default": false
+    }
+  }
+}
