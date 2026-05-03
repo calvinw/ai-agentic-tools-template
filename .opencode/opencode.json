@@ -1,6 +1,6 @@
 {
   "$schema": "https://opencode.ai/config.json",
-  "model": "deepseek/deepseek-chat:free",
+  "model": "deepseek/deepseek-v4-flash",
   "provider": {
     "openrouter": {
       "options": {
