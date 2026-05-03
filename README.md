@@ -17,7 +17,7 @@ Your container includes:
 
 **Configuration managed by:**
 - `configs/mcp-servers.conf` — Model Context Protocol servers available to all agents
-- `.skillshare/` — Custom skills available to Claude Code
+- `.skillshare/` — Custom skills available to all agents (single source of truth)
 
 ---
 
@@ -117,11 +117,15 @@ Removes all MCP registrations listed in the conf file from every tool's config.
 
 ---
 
-## Skills (Claude Code Only)
+## Skills (All Agents)
 
-Skills are custom commands available to Claude Code. The `.skillshare/` directory contains your installed skills.
+Skills are custom slash commands available across all your AI agents. The `.skillshare/` directory is the **single source of truth** for all skills.
 
-### Adding Skills
+### Editing Skills
+
+**Always edit skills directly in the `.skillshare/` directory.** Never manually edit skills in other tool directories — the `.skillshare/` folder is where skillshare manages your skills. Changes to skills in other locations will be overwritten during sync.
+
+### Installing Skills
 
 Install individual skills using:
 
@@ -130,15 +134,15 @@ Install individual skills using:
 # skillshare install github.com/your-org/your-skill-name
 ```
 
-### Syncing Skills to Your Agents
+### Syncing Skills to All Agents
 
-After installing or modifying skills, sync them to all your configured AI agents:
+After installing or modifying skills in `.skillshare/`, sync them to all your configured AI agents:
 
 ```
 # sync-skills.sh
 ```
 
-This deploys skills to the platforms listed in `.skillshare/config.yaml` (Claude, OpenCode, Copilot, Gemini, etc.).
+This deploys skills to the platforms listed in `.skillshare/config.yaml` (Claude Code, OpenCode, Copilot, Gemini, Crush, Codex, etc.).
 
 ---
 
