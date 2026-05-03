@@ -1,4 +1,11 @@
 {
   "$schema": "https://opencode.ai/config.json",
-  "model": "google/gemini-3-1-pro"
+  "model": "deepseek/deepseek-chat:free",
+  "provider": {
+    "openrouter": {
+      "options": {
+        "apiKey": "{env:OPENROUTER_API_KEY}"
+      }
+    }
+  }
 }
