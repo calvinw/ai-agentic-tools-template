@@ -155,7 +155,7 @@ Project-level OpenCode configuration (project root, highest precedence).
 Dev container configuration.
 - References container image: `ghcr.io/calvinw/ai-course-devcontainer:latest`
 - Runs setup on creation: `setup-env.sh && install-mcps.sh && setup-skills.sh && skillshare install github.com/anthropics/skills/skill-creator && sync-skills.sh`
-- Declares secrets for GitHub Codespaces: `STITCH_API_KEY`, `OPENROUTER_API_KEY`
+- Declares secrets for GitHub Codespaces: `STITCH_API_KEY`
 
 ---
 
@@ -210,7 +210,6 @@ All launcher scripts live in `permissions/` (baked into container image):
 
 **For authentication in Codespaces:**
 - `STITCH_API_KEY` — Stitch MCP authentication
-- `OPENROUTER_API_KEY` — OpenRouter API access
 
 Declare these in `.devcontainer/devcontainer.json` under `"secrets"` and add values in GitHub Codespaces settings.
 
