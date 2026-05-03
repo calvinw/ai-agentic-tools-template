@@ -2,6 +2,7 @@
   "image": "ghcr.io/calvinw/ai-course-devcontainer:latest",
   "postCreateCommand": "setup-env.sh && install-mcps.sh && setup-skills.sh && skillshare install github.com/anthropics/skills/skill-creator && sync-skills.sh || true",
   "secrets": {
-    "STITCH_API_KEY": "STITCH_API_KEY"
+    "STITCH_API_KEY": "STITCH_API_KEY",
+    "OPENROUTER_API_KEY": "OPENROUTER_API_KEY"
   }
 }
