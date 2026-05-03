@@ -1,0 +1,10 @@
+targets:
+  - claude
+  - copilot
+  - opencode
+  - gemini
+  - crush
+  - codex
+
+audit:
+  level: moderate
