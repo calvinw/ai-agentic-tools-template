@@ -4,5 +4,12 @@
   "secrets": {
     "STITCH_API_KEY": "STITCH_API_KEY",
     "OPENROUTER_API_KEY": "OPENROUTER_API_KEY"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ritwickdey.LiveServer"
+      ]
+    }
   }
 }
