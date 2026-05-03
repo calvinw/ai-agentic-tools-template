@@ -1,6 +1,25 @@
 # AI Agentic Tools Template
 
-A minimal starting point for working with AI coding assistants in a dev container. The container image comes pre-loaded with all tools — this repo only needs the two config files to get everything running.
+A minimal starting point for working with AI coding assistants in a dev container. The container image comes pre-loaded with all tools — this repo only needs the config files to get everything running.
+
+---
+
+## Quick Start
+
+1. Click **"Use this template"** button (top right of this repo)
+2. Select **"Create a new repository"**
+3. Name your repository and click **"Create repository from template"**
+4. Open your new repo in GitHub Codespaces:
+   - Click **Code** → **Codespaces** → **Create codespace on main**
+5. VS Code will open and the dev container will automatically build
+6. The postCreateCommand will run:
+   - Set up SSH keys and PATH
+   - Install and configure MCP servers
+   - Initialize skills infrastructure
+   - Install the skill-creator tool
+   - Sync all skills to your agents
+
+**That's it!** All AI agents (Claude Code, OpenCode, Copilot, Crush, Gemini, Codex) are ready to use.
 
 ---
 
